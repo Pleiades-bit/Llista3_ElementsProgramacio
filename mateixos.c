@@ -4,7 +4,7 @@
 #define DIM 100
 
 int main(void){
-    int n, i, j, valor, car_1, car_2, is_true = 0, seq_1[DIM], seq_2[DIM], trigger = 0;
+    int n, i, j, valor, car_1, car_2, is_true = 1, seq_1[DIM], seq_2[DIM], trigger = 0;
     printf("n = \n");
     scanf("%d", &n);
     while(n > DIM){

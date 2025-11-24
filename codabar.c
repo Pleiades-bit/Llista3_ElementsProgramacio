@@ -9,10 +9,12 @@ int main(void){
   }
   printf("\ncodi\t\t\t correcte\t correccio\n");
   while(u[0] != 0){
-    suma = 0;
+    suma = u[0] * 2;
     maj4 = 0;
-    for(i = 0; i < 16; i += 2){
-      suma += 2 * u[i] + u[i + 1];
+    if(u[0] > 4) maj4++;
+    for(i = 2; i < 15; i += 2){
+      suma += 2 * u[i];
+      suma += u[i - 1];
       if(u[i] > 4){
         maj4++;
       }
@@ -33,10 +35,10 @@ int main(void){
     }
     
     if(u[15] == correcte){
-      printf("Si\n ");
+      printf(" Si\n ");
     }
     else{
-      printf("No\t ");
+      printf(" No\t\t ");
       for(i = 0; i < 15; i++){
         printf("%d", u[i]);
       }
